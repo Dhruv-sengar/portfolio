@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { SpaceBackground } from "@/components/3d/SpaceBackground";
+import dynamic from "next/dynamic";
 import "./globals.css";
+
+const SpaceBackground = dynamic(
+  () => import("@/components/3d/SpaceBackground").then(m => ({ default: m.SpaceBackground })),
+  { ssr: false }
+);
 
 const inter = Inter({
   variable: "--font-inter",
