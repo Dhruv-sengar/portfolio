@@ -1,12 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import dynamic from "next/dynamic";
+import { ClientSpaceBackground } from "@/components/3d/ClientSpaceBackground";
 import "./globals.css";
-
-const SpaceBackground = dynamic(
-  () => import("@/components/3d/SpaceBackground").then(m => ({ default: m.SpaceBackground })),
-  { ssr: false }
-);
 
 const inter = Inter({
   variable: "--font-inter",
@@ -33,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} antialiased bg-transparent text-white font-sans`}>
-        <SpaceBackground />
+        <ClientSpaceBackground />
         <div className="bg-noise" />
         {children}
       </body>
