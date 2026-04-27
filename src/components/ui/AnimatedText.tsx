@@ -6,7 +6,7 @@ import { motion, Variants } from 'framer-motion';
 interface AnimatedTextProps {
   text: string;
   className?: string;
-  el?: keyof JSX.IntrinsicElements;
+  el?: React.ElementType<{ children?: React.ReactNode; className?: string; style?: React.CSSProperties }>;
   once?: boolean;
   delay?: number;
   style?: React.CSSProperties;

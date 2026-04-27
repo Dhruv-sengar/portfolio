@@ -60,6 +60,7 @@ const DNAHelix = () => {
                 count={2} 
                 array={new Float32Array([...p1.toArray(), ...p2.toArray()])} 
                 itemSize={3} 
+                args={[new Float32Array([...p1.toArray(), ...p2.toArray()]), 3]}
               />
             </bufferGeometry>
             <lineBasicMaterial attach="material" color="#ffffff" transparent opacity={0.1} />
