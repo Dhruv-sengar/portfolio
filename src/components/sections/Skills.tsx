@@ -30,19 +30,19 @@ export const Skills: React.FC = () => {
 
         {/* Footer/Stats */}
         <motion.div 
-          className="flex gap-12 text-center"
+          className="flex gap-6 md:gap-12 text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
         >
           <div>
-            <div className="text-4xl font-black text-white">10+</div>
-            <div className="text-xs font-bold uppercase tracking-widest text-white/40 mt-1">Core Tech</div>
+            <div className="text-3xl md:text-4xl font-black text-white">10+</div>
+            <div className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-white/40 mt-1">Core Tech</div>
           </div>
           <div>
-            <div className="text-4xl font-black text-white">360°</div>
-            <div className="text-xs font-bold uppercase tracking-widest text-white/40 mt-1">Perspective</div>
+            <div className="text-3xl md:text-4xl font-black text-white">360°</div>
+            <div className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-white/40 mt-1">Perspective</div>
           </div>
         </motion.div>
       </div>

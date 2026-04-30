@@ -50,17 +50,17 @@ export const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.6, ease: [0.16, 1, 0.3, 1] }}
-          className="mt-12 flex flex-col sm:flex-row gap-4 sm:gap-6"
+          className="mt-12 flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto px-4 sm:px-0"
         >
           <a
             href="#projects"
-            className="px-8 py-4 bg-white text-black font-semibold rounded-full hover:bg-white/90 transition-all duration-300 transform hover:scale-105"
+            className="w-full sm:w-auto px-8 py-4 bg-white text-black font-semibold rounded-full hover:bg-white/90 transition-all duration-300 transform hover:scale-105 text-center"
           >
             Explore Work
           </a>
           <a
             href="#contact"
-            className="px-8 py-4 bg-white/10 border border-white/10 text-white font-semibold rounded-full hover:bg-white/20 transition-all duration-300 backdrop-blur-md transform hover:scale-105"
+            className="w-full sm:w-auto px-8 py-4 bg-white/10 border border-white/10 text-white font-semibold rounded-full hover:bg-white/20 transition-all duration-300 backdrop-blur-md transform hover:scale-105 text-center"
           >
             Contact Me
           </a>

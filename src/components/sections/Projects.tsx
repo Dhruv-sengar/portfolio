@@ -37,17 +37,17 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Digital Elegance Portfolio',
-    description: 'Futuristic 3D portfolio showcasing projects with interactive elements, glassmorphism, and premium UI aesthetics.',
-    problem: 'Traditional portfolios lack interactivity and visual appeal, failing to stand out to recruiters and showcase technical depth.',
+    title: 'Moral Compass Classifier',
+    description: 'A full-stack machine learning application that categorizes user-provided scenarios into Utilitarian, Ethical, or Selfish with a dynamic 3D Cyber-Oracle UI.',
+    problem: 'People often struggle to objectively evaluate the moral alignment of their actions or scenarios in a structured, unbiased way.',
     features: [
-      '3D scene rendering with Three.js',
-      'Smooth scroll animations and dynamic text reveals',
-      'Minimalist, highly professional brutalist UI',
-      'Performance optimized rendering',
+      'Real-time text classification using custom-trained ML models',
+      'Dynamic 3D Ethereal Cyber-Oracle UI reacting to predictions',
+      'FastAPI backend integrated with a React frontend',
+      'Explainable AI providing confidence percentages for predictions',
     ],
-    tech: ['Next.js', 'React Three Fiber', 'Tailwind CSS', 'Framer Motion'],
-    liveUrl: '#',
+    tech: ['React', 'FastAPI', 'Scikit-Learn', 'Vercel', 'Render'],
+    liveUrl: 'https://moral-compass.vercel.app/',
     icon: '03',
   }
 ];

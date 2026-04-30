@@ -86,15 +86,15 @@ export const Contact: React.FC = () => {
                   href={social.href}
                   className="group flex items-center justify-between border-b border-white/10 pb-6 hover:border-white transition-colors duration-500"
                 >
-                  <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-2 sm:gap-4 flex-shrink-0">
                     <span className="text-white/50 group-hover:text-white transition-colors duration-500">
                       {social.icon}
                     </span>
-                    <span className="text-sm font-semibold tracking-widest uppercase text-white/50 group-hover:text-white transition-colors duration-500">
+                    <span className="text-xs sm:text-sm font-semibold tracking-widest uppercase text-white/50 group-hover:text-white transition-colors duration-500 hidden sm:block">
                       {social.label}
                     </span>
                   </div>
-                  <span className="text-lg font-bold text-white group-hover:pl-4 transition-all duration-500">
+                  <span className="text-xs sm:text-sm md:text-lg font-bold text-white group-hover:sm:pl-4 transition-all duration-500 truncate max-w-[150px] sm:max-w-none text-right pl-2">
                     {social.value}
                   </span>
                 </a>
